@@ -2,7 +2,7 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +84,7 @@ body {
 
 .header {
   width:100%;
-  min-height: 100svh;
+
   /* background:lightblue; */
  padding-top: 6rem;
   position: relative;
@@ -179,7 +179,8 @@ body {
   background: white;
   border: 2px solid lightgrey;
   border-radius: 50px;
-  padding: 0px 10px 0px 40px;
+  padding-inline: 30px 20px;
+  overflow-x: hidden;
   
 }
 
@@ -187,12 +188,21 @@ body {
   background: transparent;
   width:100%;
   height: 100%;
-  display:grid;
-  grid-template-columns: 70% 30%;
+  display: flex;
+
   overflow-x: hidden;
 }
 
+.hero__input_wrapper > * {
+
+  flex-shrink: 0;
+
+}
+
 .hero__input_wrapper input {
+  width: 4.5rem;
+
+  text-align: left;
   border: 0.1px solid white;
   border-radius: 50px;
   background: white;
@@ -206,6 +216,10 @@ body {
 .hero__input_wrapper span {
   place-self: center;
   font-size: 0.95rem;
+  text-align: right;
+
+  flex-basis: 70%;
+
 }
 
 /*--call to action btn----*/
