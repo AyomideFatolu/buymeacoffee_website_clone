@@ -209,7 +209,7 @@ body {
 }
 
 .hero__input_wrapper input:focus {
-  border: 1px solid white;
+  outline: none;
   background: white;
 }
 
